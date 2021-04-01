@@ -36,15 +36,12 @@ void loop() {
     MidiUSB.flush();
   } else if (afstand > 30 && afstand < 50) {
     int stand = ((afstand/2) - 30)*6.5;
-
     controlChange(0, 10, stand);
     MidiUSB.flush();
   }  else{
     //Doe niks
   }
-
-
-  // controlChange(0, 10, 65); // Set the value of controller 10 on channel 0 to 65
+ 
   delay(20); //onthaasten
 }
 

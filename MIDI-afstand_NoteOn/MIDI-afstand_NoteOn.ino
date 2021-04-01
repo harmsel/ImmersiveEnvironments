@@ -2,16 +2,11 @@
 #include "MIDIUSB.h"
 #include "Ultrasonic.h"
 
-Ultrasonic ultrasonic(7);//dus op D7
+Ultrasonic ultrasonic(7);//stekker van je sensor op D7
 
 
 void setup() {
   Serial.begin(115200);
-}
-
-void controlChange(byte channel, byte control, byte value) {
-  midiEventPacket_t event = {0x0B, 0xB0 | channel, control, value};
-  MidiUSB.sendMIDI(event);
 }
 
 void loop() {
@@ -21,30 +16,23 @@ void loop() {
 
   /// ---  als de afstand minder is dan zoveel cm zet geluid 1 aan
   if (afstand < 2) {
-    Serial.println("E2 aan");
+    Serial.println("note E2 aan");
     noteOn(0, 48, 64);
     MidiUSB.flush();
   }
   else if (afstand < 5) {
-    Serial.println("D2 aan");
+    Serial.println("note D2 aan");
     noteOn(0, 50, 64);
     MidiUSB.flush();
   }
   else if (afstand < 10) {
-    Serial.println("C2 aan");
+    Serial.println("note C2 aan");
     noteOn(0, 52, 64);
-    MidiUSB.flush();
-  } else if (afstand > 30 && afstand < 50) {
-    int stand = ((afstand/2) - 30)*6.5;
-
-    controlChange(0, 10, stand);
     MidiUSB.flush();
   }  else{
     //Doe niks
   }
-
-
-  // controlChange(0, 10, 65); // Set the value of controller 10 on channel 0 to 65
+ 
   delay(20); //onthaasten
 }
 
@@ -56,4 +44,9 @@ void noteOn(byte channel, byte pitch, byte velocity) {
 void noteOff(byte channel, byte pitch, byte velocity) {
   midiEventPacket_t noteOff = {0x08, 0x80 | channel, pitch, velocity};
   MidiUSB.sendMIDI(noteOff);
+}
+
+void controlChange(byte channel, byte control, byte value) {
+  midiEventPacket_t event = {0x0B, 0xB0 | channel, control, value};
+  MidiUSB.sendMIDI(event);
 }
