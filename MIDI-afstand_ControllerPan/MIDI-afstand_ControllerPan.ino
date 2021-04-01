@@ -14,10 +14,10 @@ void loop() {
   long afstand;
   afstand = ultrasonic.MeasureInCentimeters();
   Serial.print(afstand); Serial.println(" cm");
-    int stand = afstand*2;
-    controlChange(0, 10, stand);
-    MidiUSB.flush();
- 
+  int stand = afstand * 2;
+  controlChange(0, 10, stand);
+  MidiUSB.flush();
+
   delay(50); //onthaasten
 }
 
