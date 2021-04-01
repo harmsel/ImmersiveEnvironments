@@ -1,4 +1,4 @@
-Quickstart Seeeduino:
+<H3>Quickstart Seeeduino:
 https://docs.google.com/document/d/1IWDvFZnBF8DPLcEVI48kRx2nD-p4Irm3OsvzJ7Es0VY/edit
 
 Intro Ledstrips aansturen:
