@@ -2,7 +2,7 @@
   speciaal gemaakt voor de fijne studenten van de Minor Immersive Environments CMD
   Onderstaande code stuurt een MIDI signaal 'Controll Change' naar de laptop
   aan de hand van de afstand tot een afstandsensor.
-  Gebruikte hardware: Seeeduino M+ (Zero) & Grove Afstandsensor v2.0
+  Gebruikte hardware: Seeeduino M+ (Zero) & Grove Afstandssensor v2.0
 */
 
 #include "MIDIUSB.h"
