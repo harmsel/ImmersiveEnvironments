@@ -12,7 +12,7 @@ Ultrasonic ultrasonic(7);//dus op D7
 
 void setup() {
   Serial.begin(115200);
-  pinMode(4, INPUT); //de Druknop
+  pinMode(4, INPUT); //Sluit de Druknop aan op D3!
 }
 
 
