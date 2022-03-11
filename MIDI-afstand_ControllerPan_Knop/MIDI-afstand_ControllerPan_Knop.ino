@@ -30,7 +30,7 @@ void loop() {
   }
 
 
-
+/*
   // -- afstandsensor, effect aanpassen adhv de afstand ---------
 
   long afstand = ultrasonic.MeasureInCentimeters();
@@ -41,7 +41,8 @@ void loop() {
     controlChange(0, 10, stand);
     MidiUSB.flush();
   }
-  delay(50); //onthaasten
+  */
+  delay(150); //onthaasten
 }
 
 
