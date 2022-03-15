@@ -27,11 +27,11 @@ void loop() {
 
   // Make the sensor les sensitive to prevent trigger when distance
   // did not realy change a lot.
-  int sensorVal = cm / 20; //feel free to change the number
+  int sensorVal = cm / 20; //the numer is de sensitivity and distance multiplier
 
   //Serial.println(sensorVal);                  //  sensor output
 
-  if (sensorVal < 1 && sensorVal != oldVal && !running1) { // distance in Decimeters!
+  if (sensorVal < 1 && sensorVal != oldVal && !running1) { // distance in cm x 20!
     Serial.println("C1");
     noteOn(0, 24, 64);   // C1, normal velocity
     MidiUSB.flush();
@@ -39,7 +39,7 @@ void loop() {
     running2 =  false;
     running3 =  false;
 
-  }  else if (sensorVal < 2 && sensorVal != oldVal && !running2) { // distance in Decimeters!
+  }  else if (sensorVal < 2 && sensorVal != oldVal && !running2) { // distance in cm x 20!
     Serial.println("C2");
     noteOn(0, 36, 64);   //  C2, normal velocity
     MidiUSB.flush();
@@ -48,7 +48,7 @@ void loop() {
     running3 =  false;
 
 
-  } else if (sensorVal < 3 && sensorVal != oldVal && !running3 ) { // distance in Decimeters!
+  } else if (sensorVal < 3 && sensorVal != oldVal && !running3 ) { // distance in cm x 20!
     Serial.println("C3");
     noteOn(0, 48, 64);   // C3, normal velocity
     MidiUSB.flush();
