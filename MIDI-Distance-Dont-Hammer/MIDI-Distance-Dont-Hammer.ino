@@ -27,7 +27,7 @@ void loop() {
 
   // Make the sensor les sensitive to prevent trigger when distance
   // did not realy change a lot.
-  int sensorVal = cm / 20; //the numer is de sensitivity and distance multiplier
+  int sensorVal = cm / 20; //the number is de sensitivity and distance multiplier
 
   //Serial.println(sensorVal);                  //  sensor output
 
