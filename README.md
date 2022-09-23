@@ -14,7 +14,7 @@ Connect board (USB cable) and select board: Arduino MICRO, port: /dev/cu.usbmode
 ### Upload your code
 File → examples→ Basic → Blink 
 Compile and upload: you can use  ‘Command - U'  
-If you see Done uploading it worked!  
+If you see 'Done uploading' it worked!  
 
 ### Blink code adjustment 
 The blue led on the board is blinking (1 second/1 second) 
