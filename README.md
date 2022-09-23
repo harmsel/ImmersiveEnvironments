@@ -64,17 +64,16 @@ Arduino: Tools > manage Libraries...  >‘MIDIUSB’
 * Find: examples > MIDIUSB > MIDIUSB_WRITE (scroll down) 
 * Upload this (If you don’t see “Done Uploading” you have to fix this!) 
 * Open Serial Monitor, click on search icon right top of your screen 
-* See how the Micro is sending MIDI Notes to your Laptop  
 
 ## View the MIDI communication 
 * Download MID+I View or find in appstore: Midiview 
 * Open MidiView 
 * Click Enable 
-* Select Arduino MIcro 
+* Select Arduino Micro 
 You should be able to see the notes  de MidiView
 
 ## Generate MIDI using the distance sensor 
-* Copy the code from: https://github.com/harmsel/ImmersiveEnvironments/ 
+* Copy the code from:https://github.com/harmsel/ImmersiveEnvironments/tree/main/MIDI-distance_NoteOn
 * Check if data is received by MidiView  
 
 ## Control Madmapper with distance sensor (Arduino) 
@@ -84,7 +83,7 @@ You should be able to see the notes  de MidiView
 * Tigger a MIDI note ON (arduino) 
 * Edit MIDI (in Control list) 
 
-Video of steps above: 
+Attaching MIDI controls to Madmapper
 https://vimeo.com/753106105
 
 💡🚀TIP: If you want to test what switching between scenes looks like. Then use your keyboard to fake the interaction for testing. Then instead of MIDI, choose Keyboard 
@@ -102,13 +101,4 @@ In the top, on the far right, two squares next to each other. You see the yellow
 Video (DUTCH only! So if you don’t get it, let me know ASAP): https://www.youtube.com/watch?v=XS0JlHeDmTY 
 
 All Code examples: 
-
 https://github.com/harmsel/ImmersiveEnvironments 
-
- 
-
- 
-
- 
-
- 
