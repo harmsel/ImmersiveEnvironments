@@ -2,38 +2,40 @@
 #include "MIDIUSB.h"
 #include "Ultrasonic.h"
 
-Ultrasonic ultrasonic(7);//stekker van je sensor op D7
-
+Ultrasonic ultrasonic(7);//plug in 7
+int stopHammer=999;
 
 void setup() {
   Serial.begin(115200);
 }
 
 void loop() {
-  long afstand;
-  afstand = ultrasonic.MeasureInCentimeters();
-  Serial.print(afstand); Serial.println(" cm");
+  long distance;
+  distance = ultrasonic.MeasureInCentimeters();
+  Serial.print(distance); Serial.println(" cm");
 
-  /// ---  als de afstand minder is dan zoveel cm zet geluid 1 aan
-  if (afstand < 2) {
+  /// ---  if  distance is 2 cm, send note
+  if (distance == 2 && stopHammer != 1 ) {
     Serial.println("note E2 aan");
     noteOn(0, 48, 64);
     MidiUSB.flush();
+    stopHammer = 1;     
   }
-  else if (afstand < 5) {
+  else if (distance < 5 && stopHammer != 2) {
     Serial.println("note D2 aan");
     noteOn(0, 50, 64);
     MidiUSB.flush();
+       stopHammer = 2;  
   }
-  else if (afstand < 10) {
+  else if (distance < 10 && stopHammer != 3) {
     Serial.println("note C2 aan");
     noteOn(0, 52, 64);
     MidiUSB.flush();
+stopHammer = 3;  
   }  else{
-    //Doe niks
-  }
+    stopHammer = 99;   }
  
-  delay(20); //onthaasten
+  delay(1); //onthaasten
 }
 
 void noteOn(byte channel, byte pitch, byte velocity) {
