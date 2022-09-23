@@ -62,8 +62,7 @@ Arduino: Tools > manage Libraries...  >‘MIDIUSB’
 * Download MIDI View: https://hautetechnique.com/midi/midiview/
 * Open MidiView 
 * Click Enable 
-* Select Arduino Micro 
-You should be able to see the notes  de MidiView
+* Select Arduino Micro (You should be able to see the notes  de MidiView)
 
 ## Generate MIDI using the distance sensor 
 * Copy the code from:https://github.com/harmsel/ImmersiveEnvironments/tree/main/MIDI-distance_NoteOn
