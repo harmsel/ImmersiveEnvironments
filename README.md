@@ -21,9 +21,7 @@ Start Arduino from Applications
 * Change the frequency of the blinking led in the code, upload again. Can you see the difference?  
 
 ## Install/remove a Library  
-* Open Arduino 
-* Go to Tools > Manage Libraries 
-* Search for “name of the lib” 
+* Arduino → Tools > Manage Libraries -> Search for “name of the lib” 
 * Remove: Go to 'Arduino' → ' Preferences . You will find the 'Sketchbook location' Open en find the location of the Libraries
 * Remove (delete) using finder. Normaly are the libs in Documents/Arduino/Libraries
 
