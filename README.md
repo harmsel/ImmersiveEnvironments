@@ -8,7 +8,7 @@ Start Arduino from Applications
 To be more inline with documentation here and online 
 Go to 'Arduino' → ' Preferences  
 Pick “Editor language:” use ‘english’ 
-Connect board (USB cable) and select board: Arduino MICRO, port: /dev/cu.usbmodem*** or simular (Windows = Com port) 
+Connect board (USB cable) and select board: Arduino MICRO from the dropdown. You should see the port: /dev/cu.usbmodem*** or simular (Windows = Com port) 
 (if your board )
 
 ### Upload your code
