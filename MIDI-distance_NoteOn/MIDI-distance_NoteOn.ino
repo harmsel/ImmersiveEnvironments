@@ -2,7 +2,7 @@
 #include "MIDIUSB.h"
 #include "Ultrasonic.h"
 
-Ultrasonic ultrasonic(7);//plug in 7
+Ultrasonic ultrasonic(13);//plug in 7
 int stopHammer=999;
 
 void setup() {
