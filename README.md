@@ -66,7 +66,7 @@ Arduino: Tools > manage Libraries...  >‘MIDIUSB’
 * Open Serial Monitor, click on search icon right top of your screen 
 
 ## View the MIDI communication 
-* Download MID+I View or find in appstore: Midiview 
+* Download MIDI View: https://hautetechnique.com/midi/midiview/
 * Open MidiView 
 * Click Enable 
 * Select Arduino Micro 
