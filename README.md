@@ -1,19 +1,49 @@
-<H3>Quickstart Seeeduino:</H3>
-https://docs.google.com/document/d/1IWDvFZnBF8DPLcEVI48kRx2nD-p4Irm3OsvzJ7Es0VY/edit
+## Quickstart Arduino Mac (& Windows)  
+### install Arduino Software 
+Download and install Arduino IDE (not the online IDE/web editor) https://www.arduino.cc/en/Main/Software 
+MAC: Move the file  ‘Arduino’ to ‘Apps’  
+Start Arduino from Applications  
 
-<H3>Seeeduino - Uploaden lukt niet Port niet gevonden </h3>
-Video: https://www.youtube.com/watch?v=pEMSIn7Zo2Y&t=13s
+### Set UI to Englisch 
+To be more inline with documentation here and online 
+Go to 'Arduino' → ' Preferences  
+Pick “Editor language:” use ‘english’ 
+Connect board (USB cable) and select board: Arduino MICRO, port: /dev/cu.usbmodem*** or simular (Windows = Com port) 
+(if your board )
 
-<H3>Intro Ledstrips aansturen:</H3>
-https://docs.google.com/presentation/d/17yk_cvxKsBJZ4469aYU3-iPXgD-lJVL94Hbjv8IFy0U/edit#slide=id.g170978da0f_0_0
+### Upload your code
+File → examples→ Basic → Blink 
+Compile and upload: you can use  ‘Command - U'  
+If you see Done uploading it worked!  
 
-<H3>Voorbeelden Ledstrips aansturen door Jonas</H3>
-https://github.com/JonasVorwerk/lightstudies
+### Blink code adjustment 
+The blue led on the board is blinking (1 second/1 second) 
+Change the frequency of the blinking led in the code, upload again. Can you see the difference?  
 
-<H3>Intro Ableton Live & Arduino met MIDI:</H3>
-https://docs.google.com/document/d/1TT-UYQLZ4YLcK0PZCqg3IFgSzUNv4nhV48qWPROpmvM/edit
+ 
+## Install/remove a Library  
 
-<H3>Capacitieve sensor en MIDI:</H3>
-https://docs.google.com/document/d/1i2UL5v0dpuzGsQOHs-2QdkueggmM-opSAAS576dEGrU/edit
+Open Arduino 
+Go to Tools > Manage Libraries 
+Search for “Grove Ultrasonic ranger” 
+Install and close Library management’ 
+Go to File > Examples and check if the “Grove Ultrasonic Ranger” is installed. 
 
+Remove: Go to 'Arduino' → ' Preferences . You will find the 'Sketchbook location' Open en find the location of the Libraries
+Remove using finder. (normaly are the libs in Documents/Arduino/Libraries)
 
+## Fixing errors
+There are two kinds of errors:
+- Errors connecting with USB (happens to much)
+- Errors in code
+
+Upload an empy sketch (press command+n) and (command+u). If uploading fails it is port/USB/connection problem.
+
+#### Connection (USB/port) problems
+- Select the board and select the port
+    -  Not possible? Use another (physical) USB port on your laptop
+    - Use another cable
+    - Use another Arduino
+- The Arduino and port are available
+    - Use the blink code
+    
