@@ -1,30 +1,31 @@
 
-# Interactive Madmapper & Ableton (see below) 
+# MIDI - Madmapper, Ableton and More 
 
-### Node/Arduino chart (you need this later) 
+### MIDI Node/Arduino chart (you need this later) 
 [https://diymidicontroller.com/midi-note-chart/ ]()
- 
 
 
-### Upload MIDI Sketch 
+### View the code and Serial Monitor data
 
-1. In the menu bar Arduino IDE  (scroll down): File > Examples > MIDIUSB > MIDIUSB_WRITE
-2. Upload 
-3. Open Serial Monitor, click on search icon right top of your screen 
+1. Find "MIDI-timed" on this Github page (open new tab)
+- Upload
+- Open Serial Monitor (Search icon right top)
+- Your serial monitor will now be in the IDE, always open this when working with arduino
 
 ### View the MIDI communication 
-1. Download MIDI View: https://hautetechnique.com/midi/midiview/
-2. Open MidiView 
-3. Click Enable 
-4. Select Arduino Micro (You should be able to see the notes  de MidiView)
+1. Download MIDI View: [https://hautetechnique.com/midi/midiview/
+](https://vimeo.com/753106105)
+- Open MidiView 
+- Click Enable, and Select Arduino Micro 
+- You should be able to see the notes  de MidiView
 
 ![](images/midiView.png)
 
 ### Generate MIDI using the distance sensor 
 1. Copy/download/fork the code from:[MIDI-distance_NoteOn](https://github.com/harmsel/ImmersiveEnvironments/tree/main/MIDI-distance_NoteOn)
-2. Follow instructions in this code how to connect your Distance sensor
-3. Upload the code en check the data in the Serial Monitor (Arduino)  
-4. Check if data is received by MidiView  
+- Follow instructions in this code how to connect your Distance sensor
+- Upload the code en check the data in the Serial Monitor (Arduino)  
+- Check if data is received by MidiView  
 
 ## Control Madmapper with distance sensor (Arduino) 
 1. Make two scenes (Dropdown: Scenes/ Cues 
@@ -42,13 +43,16 @@ https://vimeo.com/753106105
 How it works: Sensor -> MICRO-> Seeeduino -> MIDI -> Ableton 
 
 ### Ableton MIDI settings 
-* Live > Preferences > Link/tempo/MIDI > MIDI ports.  
-* select Micro: Track and Remote
-* Check if MIDI Is received by Ableton 
+1. Live > Preferences > Link/tempo/MIDI 
+- in the 'MIDI ports' section:  
+	- select Micro: Track and Remote
 
-In the top, on the far right, two squares next to each other. You see the yellow block light up very briefly at MIDI input. (see screenshot below) 
+**Check if MIDI Is received by Ableton 
+**
+In the top, on the far right, two squares next to each other. You see the yellow block light up very briefly at MIDI input.
 
-Video (DUTCH only! So if you don’t get it, let me know ASAP): https://www.youtube.com/watch?v=XS0JlHeDmTY 
+Video explaning (DUTCH only!) how to connect MIDI input to Ableton: [https://youtu.be/XS0JlHeDmTY?t=176]()
+Code is a bit different from the code we use now
 
 All Code examples: 
 https://github.com/harmsel/ImmersiveEnvironments 

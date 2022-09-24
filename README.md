@@ -1,24 +1,19 @@
 ## Quickstart Arduino Mac (& Windows)  
 ### install Arduino Software 
-Download and install Arduino IDE (not the online IDE/web editor) https://www.arduino.cc/en/Main/Software 
-MAC: Move the file  ‘Arduino’ to ‘Apps’  
-Start Arduino from Applications  
+1. Download and install Arduino IDE (not the online IDE/web editor) https://www.arduino.cc/en/Main/Software 
+- MAC: Move the file  ‘Arduino’ to ‘Apps’  
+- Start Arduino IDE from 'Applications'  
+- To be more inline with documentation here and online: 
+- Go to 'Arduino' → ' Preferences  
+- Pick “Editor language:” use ‘English’
 
-### Set UI to Englisch 
-* To be more inline with documentation here and online 
-* Go to 'Arduino' → ' Preferences  
-* Pick “Editor language:” use ‘english’ 
-* Connect board (USB cable)
-* select board: Arduino MICRO from the dropdown. You should see the port: /dev/cu.usbmodem*** or simular (Windows = Com port) 
 
-### Upload your code
-* File → examples→ Basic → Blink 
-* Compile and upload: you can use  ‘Command - U'  
-* If you see 'Done uploading' it worked!  
-
-### ADJUST the Blink code 
-* The blue led on the board is blinking (1 second/1 second) 
-* Change the frequency of the blinking led in the code, upload again. Can you see the difference?  
+### Check if it all works (you can use this in the future too)
+1. Connect board (USB cable)
+- select board: Arduino MICRO from the dropdown. You should see the port: /dev/cu.usbmodem*** or simular (Windows = Com port) 
+- File → examples→ Basic → Blink 
+- Compile and upload: you can use  ‘Command - U'  
+- If you see 'Done uploading' and a blinking LED on the Micro, it works!  
 
 ### Connecting sensors & Actuators
 ![](images/proMicro.jpg)
