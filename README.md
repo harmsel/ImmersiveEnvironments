@@ -20,6 +20,10 @@ Start Arduino from Applications
 * The blue led on the board is blinking (1 second/1 second) 
 * Change the frequency of the blinking led in the code, upload again. Can you see the difference?  
 
+### Connecting sensors & Actuators
+![](images/proMicro.jpg)
+
+
 ## Install/remove a Library  
 * Arduino → Tools > Manage Libraries -> Search for “name of the lib” 
 * Remove: Go to 'Arduino' → ' Preferences . You will find the 'Sketchbook location' Open en find the location of the Libraries
@@ -27,70 +31,28 @@ Start Arduino from Applications
 
 ## Fixing errors
 There are two kinds of errors:
-* Errors connecting with USB (happens to much)
-* Errors in code
 
-Upload an empy sketch (press command+n) and (command+u). If uploading fails it is port/USB/connection problem.
+1. USB/port problems (this is 'normal' 😫)
+2. Errors in code
 
-#### Connection (USB/port) problems
-- Select the board and select the port
-    -  Not possible? Use another (physical) USB port on your laptop
-    - Use another cable
-    - Use another Arduino
-- The Arduino and port are available
-    - Use the blink code
+#### USB/port problem or Code error?
+
+1. Unplug all sensors (or the ground wire to the sensors)
+- Upload an empy sketch (press command+n) and (command+u). 
+- Still an error while uploading? **= USB/port problem**
+
+#### USB/port problem - Fix
+1. Don't try to upload if the Board and port are not selected (Like image below) it is useless and thus frustrating
+- Press the button on the Micro (LED starts fading in/out)
+- Wait till fading stops
+- Select the board and select the port (in the Arduino IDE)
+	1. Board and Port not visible in the dropdown? 
+		- Use another (physical) USB port on your laptop, use another cable, try another Arduino
+- Upload again 🤞
+
+This is what we would like to see (port name could be a bit different. Windows = Com#)
+![](images/boardPortSelected.png)
+
     
-# Interactive Madmapper & Ableton (see below) 
 
-### Node/Arduino chart (you need this later) 
-https://diymidicontroller.com/midi-note-chart/ 
-
- 
-### Install the MIDI library  
-
-Arduino: Tools > manage Libraries...  >‘MIDIUSB’ 
-
- 
-
-### Upload MIDI Sketch 
-
-* Find: examples > MIDIUSB > MIDIUSB_WRITE (scroll down) 
-* Upload this (If you don’t see “Done Uploading” you have to fix this!) 
-* Open Serial Monitor, click on search icon right top of your screen 
-
-## View the MIDI communication 
-* Download MIDI View: https://hautetechnique.com/midi/midiview/
-* Open MidiView 
-* Click Enable 
-* Select Arduino Micro (You should be able to see the notes  de MidiView)
-
-## Generate MIDI using the distance sensor 
-* Copy the code from:https://github.com/harmsel/ImmersiveEnvironments/tree/main/MIDI-distance_NoteOn
-* Check if data is received by MidiView  
-
-## Control Madmapper with distance sensor (Arduino) 
-* Make two scenes (Dropdown: Scenes/ Cues 
-* Attach a MIDI controll to start each scene (dropdown: controll list) > Learn MIDI 
-* Go to Scenes/ Cues > select a scene 
-* Tigger a MIDI note ON (arduino) 
-* Edit MIDI (in Control list) 
-
-Attaching MIDI controls to Madmapper
-https://vimeo.com/753106105
-
-💡🚀TIP: If you want to test what switching between scenes looks like. Then use your keyboard to fake the interaction for testing. Then instead of MIDI, choose Keyboard 
-
-# Make Ableton interactive - Using external sensors 
-How it works: Sensor -> MICRO-> Seeeduino -> MIDI -> Ableton 
-
-### Ableton MIDI settings 
-* Live > Preferences > Link/tempo/MIDI > MIDI ports.  
-* select Micro: Track and Remote
-* Check if MIDI Is received by Ableton 
-
-In the top, on the far right, two squares next to each other. You see the yellow block light up very briefly at MIDI input. (see screenshot below) 
-
-Video (DUTCH only! So if you don’t get it, let me know ASAP): https://www.youtube.com/watch?v=XS0JlHeDmTY 
-
-All Code examples: 
-https://github.com/harmsel/ImmersiveEnvironments 
+    
