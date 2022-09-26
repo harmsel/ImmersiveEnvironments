@@ -1,9 +1,10 @@
-# Immersive Environments docs
+# Immersive Environments docs 
 * [Quickstart: install en first test] (quickstart)
 * [Connect sensors](### Connecting sensors & Actuators)
 * [Library install and removal](## Install/remove a Library)
 * [Fixing errors](## Fixing errors)
 * [Make Madmapper & Ableton interactive using sensors](MIDI-Madmapper.md)
+\
 
 [Go to Real Cool Heading section](#real-cool-heading)
 
