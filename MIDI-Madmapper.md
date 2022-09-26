@@ -7,37 +7,45 @@
 
 ### View the code and Serial Monitor data
 
-1. Find "MIDI-timed" on this Github page (open new tab)
-- Upload
+1. Find "[MIDI-timed](MIDI-timed)" on this Github page (open in a new tab)
+- copy-paste/fork/download this code
+- Upload this code to your Arduino board
 - Open Serial Monitor (Search icon right top)
-- Your serial monitor will now be in the IDE, always open this when working with arduino
+- Your serial monitor will now be in the IDE, always open this when working with arduino!
+- Check the values in the Serial Monitor, try to understand the code
 
-### View the MIDI communication 
+### View the MIDI data from the arduino 
 1. Download MIDI View: [https://hautetechnique.com/midi/midiview/
 ](https://vimeo.com/753106105)
 - Open MidiView 
 - Click Enable, and Select Arduino Micro 
-- You should be able to see the notes  de MidiView
+- You should see the MIDI data in MidiView
 
 ![](images/midiView.png)
 
-### Generate MIDI using the distance sensor 
-1. Copy/download/fork the code from:[MIDI-distance_NoteOn](https://github.com/harmsel/ImmersiveEnvironments/tree/main/MIDI-distance_NoteOn)
+### Interactive MIDI using the distance sensor 
+1. Copy/download/fork the code from:[MIDI-distance_NoteOn](MIDI-distance_NoteOn)
 - Follow instructions in this code how to connect your Distance sensor
+- check [readme.rm](readme.rm) to see the board connections
 - Upload the code en check the data in the Serial Monitor (Arduino)  
 - Check if data is received by MidiView  
 
 ## Control Madmapper with distance sensor (Arduino) 
 1. Make two scenes (Dropdown: Scenes/ Cues 
-2. Attach a MIDI controll to start each scene (dropdown: controll list) > Learn MIDI 
-3. Go to Scenes/ Cues > select a scene 
-4 Tigger a MIDI note ON (arduino) 
-* Edit MIDI (in Control list) 
+- Select > Right click
+- Add Controll > MIDI
+- Learn button
+- Back to Dropdown: Scenes/ Cues
+- Select a scene 
+- Trigger the MIDI input for this Scene
+- Repeat for the second scene
 
-Attaching MIDI controls to Madmapper
-https://vimeo.com/753106105
+In video:
 
-💡🚀TIP: If you want to test what switching between scenes looks like. Then use your keyboard to fake the interaction for testing. Then instead of MIDI, choose Keyboard 
+[https://vimeo.com/753106105](Attaching MIDI controls to Madmapper)
+
+
+💡🚀TIP: If you want to test what switching between scenes looks like, before you do all the MIDI settings. Use your keyboard to fake the interaction for testing. Then instead of MIDI, choose Keyboard 
 
 # Make Ableton interactive - Using external sensors 
 How it works: Sensor -> MICRO-> Seeeduino -> MIDI -> Ableton 
