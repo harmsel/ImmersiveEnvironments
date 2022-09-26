@@ -1,33 +1,14 @@
-# Immersive Environments docs 
+# Immersive Environments - index
 * [Quickstart: install en first test](#quickstart)
 * [Connect sensors](#connect)
 * [Library install and removal](#libraries)
 * [Fixing errors](#errors)
 * [Make Madmapper & Ableton interactive using sensors](MIDI-Madmapper.md)
 
-[Go to Real Cool Heading section](#quickstart)
-
-## <a id="quickstart"></a> Quickstart Arduino Mac (& Windows)
-### install Arduino Software 
-1. Download and install Arduino IDE (not the online IDE/web editor) https://www.arduino.cc/en/Main/Software 
-- MAC: Move the file  ‘Arduino’ to ‘Apps’  
-- Start Arduino IDE from 'Applications'  
-- To be more inline with documentation here and online: 
-- Go to 'Arduino' → ' Preferences  
-- Pick “Editor language:” use ‘English’
-
-
-### Check if it all works (you can use this in the future too)
-1. Connect board (USB cable)
-- select board: Arduino MICRO from the dropdown. You should see the port: /dev/cu.usbmodem*** or simular (Windows = Com port) 
-- File → examples→ Basic → Blink 
-- Compile and upload: you can use  ‘Command - U'  
-- If you see 'Done uploading' and a blinking LED on the Micro, it works!  
-
 ### <a id="connect"></a> Connecting sensors & Actuators
 ![](images/proMicro.jpg)
 
-In the code you will find annotations where to connect the sensor
+In the code you will find annotations how to connect the sensor
 
 | Name | Sensor   | Function   |
 | :---:   | :---: | :---: |
@@ -42,7 +23,7 @@ In the code you will find annotations where to connect the sensor
 
 
 
-## <a id="libraries"></a>Install/remove a Library  
+# <a id="libraries"></a>Install/remove a Library  
 * Arduino → Tools > Manage Libraries -> Search for “name of the lib” 
 * Remove: Go to 'Arduino' → ' Preferences . You will find the 'Sketchbook location' Open en find the location of the Libraries
 * Remove (delete) using finder. Normaly are the libs in Documents/Arduino/Libraries
@@ -70,6 +51,24 @@ There are two kinds of errors:
 
 This is what we would like to see (port name could be a bit different. Windows = Com#)
 ![](images/boardPortSelected.png)
+
+
+## <a id="quickstart"></a> Quickstart Arduino Mac (& Windows)
+### install Arduino Software 
+1. Download and install Arduino IDE (not the online IDE/web editor) https://www.arduino.cc/en/Main/Software 
+- MAC: Move the file  ‘Arduino’ to ‘Apps’  
+- Start Arduino IDE from 'Applications'  
+- To be more inline with documentation here and online: 
+- Go to 'Arduino' → ' Preferences  
+- Pick “Editor language:” use ‘English’
+
+
+### Check if it all works (you can use this in the future too)
+1. Connect board (USB cable)
+- select board: Arduino MICRO from the dropdown. You should see the port: /dev/cu.usbmodem*** or simular (Windows = Com port) 
+- File → examples→ Basic → Blink 
+- Compile and upload: you can use  ‘Command - U'  
+- If you see 'Done uploading' and a blinking LED on the Micro, it works!  
 
     
 
