@@ -1,14 +1,13 @@
 # Immersive Environments docs 
-* [Quickstart: install en first test] (#quickstart)
-* [Connect sensors](### Connecting sensors & Actuators)
-* [Library install and removal](## Install/remove a Library)
-* [Fixing errors](## Fixing errors)
+* [Quickstart: install en first test](#quickstart)
+* [Connect sensors](#connect)
+* [Library install and removal](#libraries)
+* [Fixing errors](#errors)
 * [Make Madmapper & Ableton interactive using sensors](MIDI-Madmapper.md)
-\
 
 [Go to Real Cool Heading section](#quickstart)
 
-## <a id="quickstart"></a> Quickstart Arduino Mac (& Windows)  
+## <a id="quickstart"></a> Quickstart Arduino Mac (& Windows)
 ### install Arduino Software 
 1. Download and install Arduino IDE (not the online IDE/web editor) https://www.arduino.cc/en/Main/Software 
 - MAC: Move the file  ‘Arduino’ to ‘Apps’  
@@ -25,16 +24,16 @@
 - Compile and upload: you can use  ‘Command - U'  
 - If you see 'Done uploading' and a blinking LED on the Micro, it works!  
 
-### Connecting sensors & Actuators
+### <a id="connect"></a> Connecting sensors & Actuators
 ![](images/proMicro.jpg)
 
 
-## Install/remove a Library  
+## <a id="libraries"></a>Install/remove a Library  
 * Arduino → Tools > Manage Libraries -> Search for “name of the lib” 
 * Remove: Go to 'Arduino' → ' Preferences . You will find the 'Sketchbook location' Open en find the location of the Libraries
 * Remove (delete) using finder. Normaly are the libs in Documents/Arduino/Libraries
 
-## Fixing errors
+## <a id="errors"></a>Fixing errors
 There are two kinds of errors:
 
 1. USB/port problems (this is 'normal' 😫)
