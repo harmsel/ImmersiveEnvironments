@@ -27,6 +27,20 @@
 ### <a id="connect"></a> Connecting sensors & Actuators
 ![](images/proMicro.jpg)
 
+In the code you will find annotations where to connect the sensor
+
+| Name | Sensor   | Function   |
+| :---:   | :---: | :---: |
+| Distance sensor| ![Afstand sensor](https://m.media-amazon.com/images/I/51ugwbd5ynL._SL160_.jpg)  | Uses an ultrasonic signal check code how to connect this. |
+| Led Strip | ![](images/ledstrip.png)   | Every led can be programmed individually in all RGB colors |
+| Lightsensor | ![](images/licht.png) | Measures light|
+| Temp. en Humidity | ![](images/temphu.png)   | Measures Humidity and Temperature|
+| Press button | ![](images/ledknop.png)    | Looks different, beware, press button is a complex sensor (debounce problems) |
+| Accelerometer - Bewegingsmeter 16g | ![](images/acceler16.png)  | You cam measure angle, movement, motion (speed of movement). It is the same sensor as used in your mobile phone.
+| Servo | ![](https://silicio.mx/media/catalog/product/cache/1/small_image/195x195/5e06319eda06f020e43594a9c230972d/r/o/rob08211p/Grove---Servomotor-21.jpg) | You can rotate the servo in every angle, from 5 to 170 degrees   |
+| Vibration | ![](images/tril.png) | You can give feedback with vibrations. Simular to your phone vibrations. But used in a box you can make sounds using this sensor|
+
+
 
 ## <a id="libraries"></a>Install/remove a Library  
 * Arduino → Tools > Manage Libraries -> Search for “name of the lib” 
