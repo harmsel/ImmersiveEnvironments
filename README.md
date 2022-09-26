@@ -6,7 +6,7 @@
 * [Make Madmapper & Ableton interactive using sensors](MIDI-Madmapper.md)
 \
 
-[Go to Real Cool Heading section](#real-cool-heading)
+[Go to Real Cool Heading section](#quickstart)
 
 ## <a id="quickstart"></a> Quickstart Arduino Mac (& Windows)  
 ### install Arduino Software 
