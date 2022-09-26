@@ -1,5 +1,5 @@
 # Immersive Environments docs 
-* [Quickstart: install en first test] (quickstart)
+* [Quickstart: install en first test] (#quickstart)
 * [Connect sensors](### Connecting sensors & Actuators)
 * [Library install and removal](## Install/remove a Library)
 * [Fixing errors](## Fixing errors)
