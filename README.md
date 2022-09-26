@@ -1,5 +1,5 @@
 # Immersive Environments docs
-* [Quickstart: install en first test] (## Quickstart Arduino Mac (& Windows))
+* [Quickstart: install en first test] (quickstart)
 * [Connect sensors](### Connecting sensors & Actuators)
 * [Library install and removal](## Install/remove a Library)
 * [Fixing errors](## Fixing errors)
@@ -7,7 +7,7 @@
 
 [Go to Real Cool Heading section](#real-cool-heading)
 
-## Quickstart Arduino Mac (& Windows)  
+## <a id="quickstart"></a> Quickstart Arduino Mac (& Windows)  
 ### install Arduino Software 
 1. Download and install Arduino IDE (not the online IDE/web editor) https://www.arduino.cc/en/Main/Software 
 - MAC: Move the file  ‘Arduino’ to ‘Apps’  
