@@ -1,5 +1,5 @@
 #include "MIDIUSB.h" //install this library. Tools > Manage Libraries...  >‘MIDIUSB’ 
-#include "Ultrasonic.h" //install this library. Search for Ultrasonic.h by Seeeduino. Arduino: Tools > Manage Libraries...  
+#include "Ultrasonic.h" //install this library. "Grove ultrasonic" Seeeduino. Arduino: Tools > Manage Libraries...  
 
 Ultrasonic ultrasonic(13);  //connect Yellow to pin 13 on your Micro. Connect black to GND and red to 5v (see readme: https://github.com/harmsel/ImmersiveEnvironments)
 int stopHammer = 999;
