@@ -1,7 +1,8 @@
 #include "MIDIUSB.h"
 #include "Ultrasonic.h"
 
-Ultrasonic ultrasonic(10);  //Yellow pin 13. Black on 4, red on 6 (see readme)
+Ultrasonic ultrasonic(13);  //Yellow pin 
+// Connect the Black wire to GND, Red 5V (see readme ))
 
 bool triggered = false;
 

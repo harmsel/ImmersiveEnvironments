@@ -6,7 +6,11 @@
 * [Make Madmapper & Ableton interactive using sensors](MIDI-Madmapper-ableton.md)
 
 ### <a id="connect"></a> Connecting sensors & Actuators
-![](images/proMicro.jpg)
+### Arduino MICRO
+![](images/micro.jpg)
+
+### Arduino Pro Micro
+![](images/proMicro.png)
 
 In the code you will find annotations how to connect the sensor
 
