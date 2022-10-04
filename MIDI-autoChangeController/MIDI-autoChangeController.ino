@@ -1,34 +1,36 @@
 #include "MIDIUSB.h"
 #include "Ultrasonic.h"
+Ultrasonic ultrasonic(13);  //Pin 13
 
-Ultrasonic ultrasonic(10);  //Yellow pin 13. Black on 4, red on 6 (see readme)
-
-bool triggered = false;
+int pos = 0;
 
 void setup() {
   Serial.begin(9600);
 }
 
 void loop() {
-  long distance = ultrasonic.MeasureInCentimeters();
-  Serial.print(distance);
-  Serial.println(" cm");
-  if (distance < 50) {
-    int angle = distance * 3;    // change the number, higher is shorter range
-    controlChange(0, 10, angle);  // controll
+
+  for (pos = 0; pos <= 120; pos += 1) {  // goes from 0 degrees to 180 degrees
+    controlChange(0, 10, pos);
     MidiUSB.flush();
-    Serial.print("angle: ");
-    Serial.println(angle);
-  } else if (distance < 100 && !triggered){
-    Serial.println("C2");
-    noteOn(0, 48, 64);   // Channel 0, middle C, normal velocity
+    Serial.println("pos: ");
+    Serial.print(pos);  // waits 15 ms for the servo to reach the position
+    delay(10);
+  }
+  for (pos = 120; pos >= 0; pos -= 1) {  // goes from 180 degrees to 0 degrees
+    controlChange(0, 10, pos);
     MidiUSB.flush();
-    triggered = true;
-  } else if (distance > 150){
-    triggered = false;
-    }
-  delay(150);  //onthaasten
+    Serial.println("pos: ");
+    Serial.print(pos);  
+     delay (10);
+  }
+
+
+
+
+  delay(1000);  //onthaasten
 }
+
 
 // -- hieronder de functies nodig voor MIDI
 void noteOn(byte channel, byte pitch, byte velocity) {

@@ -11,7 +11,7 @@
 Ultrasonic ultrasonic(13);//Pin 13
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(9600);
   pinMode(12, INPUT); //Button Pin 12!
 }
 
