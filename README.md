@@ -3,7 +3,7 @@
 * [Connect sensors](#connect)
 * [Library install and removal](#libraries)
 * [Fixing errors](#errors)
-* [Make Madmapper & Ableton interactive using sensors](MIDI-Madmapper.md)
+* [Make Madmapper & Ableton interactive using sensors](MIDI-Madmapper-ableton.md)
 
 ### <a id="connect"></a> Connecting sensors & Actuators
 ![](images/proMicro.jpg)

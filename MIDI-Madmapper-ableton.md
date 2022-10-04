@@ -1,8 +1,14 @@
 
 # MIDI - Madmapper, Ableton and More 
 
-### MIDI Node/Arduino chart (you need this later) 
-[https://diymidicontroller.com/midi-note-chart/ ]()
+### MIDI Node/Arduino Table
+
+![](images/MIDI-Table.png) 
+
+noteOn(0, 50, 64); //note D2
+noteOn(0, 52, 64); //C2
+noteOn(0, 48, 64); //E2
+
 
 
 ### View the code and Serial Monitor data

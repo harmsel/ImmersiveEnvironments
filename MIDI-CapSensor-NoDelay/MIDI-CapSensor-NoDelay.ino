@@ -7,8 +7,8 @@ elapsedMillis wachtFF3;
 int wachtTijd = 500;
 int oudeSensorWaarde;
 
-//50K - 50M tussen de pinnen. weerstand. Hoe groter des te gevoeliger
-CapacitiveSensor   sensCap = CapacitiveSensor(11, 13);       // pin 13 is de sensor
+//50K - 50M Higher resistro is more sensitive
+CapacitiveSensor   sensCap = CapacitiveSensor(12, 11);       // pin 11 yellow, pin 12 white. Black is the sensor wire
 
 
 
@@ -32,7 +32,7 @@ if (sensorWaarde != oudeSensorWaarde){
 
   oudeSensorWaarde = sensorWaarde;
 
-  if (sensorWaarde > 1000) { //gevoeligheid
+  if (sensorWaarde > 1000) { //sensitivity
     noteOn(0, 48, 64);   // Channel 0, middle C, normal velocity
     MidiUSB.flush();
     if (wachtFF1 > wachtTijd) {
@@ -42,7 +42,7 @@ if (sensorWaarde != oudeSensorWaarde){
     }
 
   } else if (sensorWaarde > 600) {//gevoeligheid
-    Serial.println("S3");
+  //  Serial.println("S3");
     noteOn(0, 60, 64);   // Channel 0, C3, normal velocity
     MidiUSB.flush();
 
@@ -53,7 +53,7 @@ if (sensorWaarde != oudeSensorWaarde){
     }
 
   } else {
-    Serial.println("c4");
+   // Serial.println("c4");
     noteOn(0, 63, 64);   // Channel 0, C3, normal velocity
     MidiUSB.flush();
     if (wachtFF3 > wachtTijd) {

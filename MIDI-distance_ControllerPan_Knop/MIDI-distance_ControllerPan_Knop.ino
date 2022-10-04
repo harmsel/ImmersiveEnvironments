@@ -2,25 +2,24 @@
   speciaal gemaakt voor de fijne studenten van de Minor Immersive Environments CMD
   Onderstaande code stuurt een MIDI signaal 'Controll Change' naar de laptop
   aan de hand van de afstand tot een afstandsensor.
-  Gebruikte hardware: Seeeduino M+ (Zero) & Grove Afstandssensor v2.0
+  Gebruikte hardware: Arduino Micro
 */
 
 #include "MIDIUSB.h"
 #include "Ultrasonic.h"
 
-Ultrasonic ultrasonic(7);//dus op D7
+Ultrasonic ultrasonic(13);//Pin 13
 
 void setup() {
   Serial.begin(115200);
-  pinMode(4, INPUT); //Sluit de Druknop aan op D3!
+  pinMode(12, INPUT); //Button Pin 12!
 }
 
 
 void loop() {
-
   // -- drukknopje, geluid starten ----
 
-  if (digitalRead(4) == LOW) {
+  if (digitalRead(12) == LOW) {
     Serial.println("C2");
     noteOn(0, 48, 64);   // Channel 0, middle C, normal velocity
     MidiUSB.flush();
@@ -29,19 +28,16 @@ void loop() {
     //Serial.println("niet ingedrukt");
   }
 
-
-/*
   // -- afstandsensor, effect aanpassen adhv de afstand ---------
 
   long afstand = ultrasonic.MeasureInCentimeters();
   Serial.print(afstand); Serial.println(" cm");
-  if (afstand < 100) { // alleen uitvoeren als er iets in de buurt van sensor zit
-
-    int stand = afstand * 2;
+  if (afstand < 50) { // alleen uitvoeren als er iets in de buurt van sensor zit
+    int stand = -afstand * 3 ;
     controlChange(0, 10, stand);
     MidiUSB.flush();
   }
-  */
+
   delay(150); //onthaasten
 }
 
