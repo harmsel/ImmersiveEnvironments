@@ -21,8 +21,7 @@ noteOn(0, 48, 64); //E2
 - Check the values in the Serial Monitor, try to understand the code
 
 ### View the MIDI data from the arduino 
-1. Download MIDI View: [https://hautetechnique.com/midi/midiview/
-](https://vimeo.com/753106105)
+1. Download MIDI View: https://hautetechnique.com/midi/midiview/
 - Open MidiView 
 - Click Enable, and Select Arduino Micro 
 - You should see the MIDI data in MidiView
