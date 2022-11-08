@@ -1,14 +1,6 @@
 #include <CapacitiveSensor.h>
 
 
-/* NOTES: 
-noteOn(0, 36, 64);   // C2, normal velocity
-noteOn(0, 26, 64);   // D1, normal velocity
-noteOn(0, 28, 64);   // E1, normal velocity
-noteOn(0, 29, 64);   // F1, normal velocity
-noteOn(0, 31, 64);   // G1, normal velocity
-*/
-
 CapacitiveSensor cs_4_2 = CapacitiveSensor(12, 11);  // pin 11 yellow, pin 12 white. Black is the sensor wire
 int losGeweest = true;
 
