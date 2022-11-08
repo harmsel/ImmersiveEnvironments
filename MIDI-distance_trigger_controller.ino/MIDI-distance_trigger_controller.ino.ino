@@ -1,4 +1,4 @@
-#include "MIDIUSB.h"
+#include "MIDIUS.h"
 #include "Ultrasonic.h"
 
 Ultrasonic ultrasonic(13);  //Yellow pin 

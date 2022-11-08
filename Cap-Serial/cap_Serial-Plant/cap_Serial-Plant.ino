@@ -22,14 +22,6 @@ void loop() {
   long total1 = cs_4_2.capacitiveSensor(30);
   Serial.println(total1);  // print sensor output 1
 
-  if (total1 > 10000 && losGeweest) {  //vooral lekker prutsen met die waarde van 1000, die bepaalt de gevoeligheid
-    Serial.println("F1");
-
-    losGeweest = false;
-  } else if (total1 < 3000 && !losGeweest) {
-    losGeweest = true;
-  }
-
   delay(20);  // arbitrary delay to limit data to serial port
 }
 
