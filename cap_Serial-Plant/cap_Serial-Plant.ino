@@ -1,4 +1,4 @@
-#include <CapacitiveSensor.h>
+#include <CapacitiveSensor.h> .///install library by Paul
 
 
 CapacitiveSensor cs_4_2 = CapacitiveSensor(12, 11);  // pin 11 yellow, pin 12 white. Black is the sensor wire
