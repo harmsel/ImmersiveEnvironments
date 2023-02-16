@@ -47,7 +47,7 @@ noteOn(0, 48, 64); //E2
 
 In video:
 
-[https://vimeo.com/videos/753106105](Attaching MIDI controls to Madmapper)
+[https://vimeo.com/753106105](Attaching MIDI controls to Madmapper)
 
 
 💡🚀TIP: If you want to test what switching between scenes looks like, before you do all the MIDI settings. Use your keyboard to fake the interaction for testing. Then instead of MIDI, choose Keyboard 
